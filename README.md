@@ -91,6 +91,15 @@ Learn more [draftjs-plugins](https://github.com/draft-js-plugins/draft-js-plugin
     delayStartupTypeset: true,                                                     
   }
   ```
+  
+   - MathJax Third-party Extensions:
+   
+        MathJax can load extensions (and configurations) from arbitrary locations. This allows authors and developers to easily integrate custom code. see [MathJax Third-party Extensions](http://docs.mathjax.org/en/latest/options/ThirdParty.html)
+
+]
+
+
+
 
 ## License
 
