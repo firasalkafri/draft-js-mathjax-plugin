@@ -29,12 +29,14 @@ const loadMathJax = ({ macros: Macros, script, mathjaxConfig }) => {
 
   if (window.MathJax) {
     window.MathJax.Hub.Config(config.options)
+    Object.assign(window.MathJax.Ajax.config.path, config.options.ajaxConfigPath)
     window.MathJax.Hub.processSectionDelay = 0
     return
   }
   load(config.script, (err) => {
     if (!err) {
       window.MathJax.Hub.Config(config.options)
+      Object.assign(window.MathJax.Ajax.config.path, config.options.ajaxConfigPath)
       // avoid flickering of the preview
       window.MathJax.Hub.processSectionDelay = 0
     }
